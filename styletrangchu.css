@@ -36,6 +36,7 @@ i.fas.fa-home {
     width: 90px;
     color: white;
     border-radius: 50%;
+    -webkit-appearance: none;
 }
 .menu{
     margin-left: 40px;
