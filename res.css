@@ -2,6 +2,9 @@
     *{
         box-sizing: border-box;
     }
+    .logo{
+        width: 70px;
+    }
     h1{
         font-size: 1.5rem;
        
