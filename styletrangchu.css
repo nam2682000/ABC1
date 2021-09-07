@@ -1,0 +1,480 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+html{
+    font-family: Arial,Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    font-size: 16px;
+    text-align: justify;
+}
+.top{
+    height: 70px;
+    background-color: rgb(14, 13, 13); /**/
+    align-items: center;
+    border-bottom: 1px solid rgb(137, 145, 179);
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+}
+h2.textt{
+    padding-top: 20px;
+}
+
+i.fas.fa-home {
+    font-size: 30px;
+}
+.logo img{
+    height:70px;
+    margin-left: 20px;
+    margin-top: 3px;
+    width: 100%;
+    color: white;
+    border-radius: 50%;
+}
+.menu{
+    margin-left: 40px;
+    align-items: center;
+}
+.menu li{
+    display: inline-block;
+    list-style: none;
+    text-transform : uppercase; 
+    padding: 0px 16px;
+}
+
+.active a {
+    color: rgb(196, 75, 75);  /**/
+}
+a{
+    font-size: 1rem;
+    text-decoration: none;
+    transition: 0.3s;
+    color: white;
+}
+.menu li:hover a{
+    color: rgb(184, 197, 64);
+}
+#Trangchu{
+    margin-top: 70px;
+    max-width: 100%;
+    border-bottom: 1px solid rgb(137, 145, 179);
+}
+.trangchu-nen{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    background: linear-gradient( to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3) );
+    border-radius: 10px;
+
+}
+.trangchu-nen::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.coll-2{
+    width: 50%;
+    float: left;
+}
+.detai.coll-2 img{
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.textt{
+    width: 100%;
+    max-width: 100%;
+    text-align: unset;
+}
+.detai.coll-2{
+    padding: 10px 20px;
+}
+.content-trangchu::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.content-trangchu{
+    height: auto;
+    /* background-color: rgb(158, 186, 238); */
+    background-color: rgb(230, 214, 214);
+    background-size: cover;
+    padding-top: 50px;
+    font-size: 1rem;
+}
+.content-trangchu h1{
+    animation: trenxuong ease 2s ;
+}
+.content-trangchu .nen{
+    margin-top: 20px;
+    width: 30%;
+    animation: todan ease 2s ;
+    margin: auto;
+}
+h1{
+    text-align: center;
+}
+.p1{
+    padding-top: 100px;
+    height: 100%;
+    width: auto;
+    /* background: linear-gradient(0,rgb(160, 189, 240),rgb(145, 177, 238)); */
+    background-color: rgb(230, 214, 214);
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid rgb(137, 145, 179);
+}
+
+.p3{
+    padding-top: 100px;
+    height: auto;
+    width: auto;
+    /* background: linear-gradient(0,rgb(188, 207, 240),rgb(163, 191, 240));
+     */
+     background-color: rgb(230, 214, 214);
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid rgb(137, 145, 179);
+}
+.p4{
+    padding-top: 100px;
+    height: auto;
+    height: 100%;
+    /* background: linear-gradient(0,rgb(196, 202, 211),rgb(194, 208, 233)); */
+    background-color: rgb(230, 214, 214);
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid rgb(137, 145, 179);
+
+}
+.coll-1{
+    width: 100%;
+    text-align: center;
+}
+.coll{
+    text-align: center;
+    width: 33.33333%;
+    float: left;
+    padding: 0px 10px;
+    padding-top: 30px;
+}
+.coll img{
+    max-width: 80%;
+    border-radius: 5px;
+}
+.coll img:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+.section-title{
+    line-height: 2;
+    text-align: center;
+    animation: trenxuong ease 2s ;
+}
+.section-title h2{
+    font-size: 2.5rem;
+   
+}
+.section-title p{
+    font-size: 1.5rem;
+    
+}
+.row{
+    margin-top: 50px;
+}
+.member-info-content{
+    margin-bottom: 40px;
+}
+.member-info{
+    font-size: 1.5rem;
+}
+.member1 img{
+    animation: traiqua ease 2s ;
+}
+.member2 img{
+    animation: trenxuong ease 2s ;
+}
+.member3 img{
+    animation: phaiqua ease 2s ;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+@keyframes trenxuong{
+    from{
+        transform: translateY(-100px);
+
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+@keyframes traiqua{
+    from{
+        transform: translateX(-100px);
+
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+@keyframes phaiqua{
+    from{
+        transform: translateX(100px);
+
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+@keyframes todan{
+    from{
+        width:10%;
+
+    }
+    to{
+        width:30%;
+    }
+}
+.table {
+    padding-top: 20px;
+}
+.mobile-menu{
+    display: none;
+}
+.noidung-caidat{
+    margin-top: 30px;
+}
+.noidung-caidat::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.coll2{
+    width: 50%;
+    text-align: center;
+    float: left;
+}
+.fas.fa-radiation{
+    font-size: 100px;
+    width: 100%;
+    margin-top: 30px;
+}
+.fas.fa-lightbulb{
+    font-size: 100px;
+    width: 100%;
+    margin-top: 30px;
+
+}
+.btnden,.btnquat
+{
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    margin-top: 20px;
+    transition: 1s;
+    background: linear-gradient(0,rgb(161, 8, 59),rgb(243, 203, 218));
+
+}
+.btnden:hover,.btnquat:hover{
+    background: teal;
+}
+.trangthai{
+    font-size: 1.3rem;
+    margin-top: 15px;
+}
+.trangthai select{
+    width: 60px;
+    height: 20px;
+    border: none;
+}
+
+
+.hienthi{
+    width: 90%;
+    height: 200px;
+    background: linear-gradient( to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3) );
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto;
+}
+/* .hienthi::after{
+    content: "";
+    display: block;
+    clear: both;
+} */
+.hienthi p{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.hienthinhiet .thongso{
+    height: 100%;
+    width: 95%;
+    background: linear-gradient( to left top, rgba(228, 17, 17, 0.8), rgba(238, 224, 224, 0.5) );
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 10px;     /**/
+    /* color: white; */
+}
+.hienthidoam .thongso{
+    height: 100%;
+    width: 95%;
+    background: linear-gradient( to left top, rgba(228, 17, 17, 0.8), rgba(238, 224, 224, 0.5) );
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+label{
+    font-size: 70px;
+    font-weight: 700;
+}
+.noidung-timhieu{
+    width: 80%;
+    background: linear-gradient( to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3) );
+    height: 100%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+p.timhieu1 {
+    padding-top: 30px;
+}
+.anh-link::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.noidung-timhieu.timhieu1{
+    margin-top: 20px;
+    text-indent : 40px;
+    line-height: 1.3;
+}
+.noidung-timhieu h2{
+    text-align: center;
+    margin-top: 70px;
+}
+.table{
+    padding-top: 60px;
+}
+.noidung-timhieu .coll{
+    margin-top: 20px;
+}
+.coll2.ga img{
+    padding-top: 25px;
+}
+.coll2.lon img{
+    padding-top: 25px;
+}
+.noidungnuoi.hiennoidungga {
+    height: 80%;
+    width: 100%;
+}
+
+.noidungnuoi{
+    background-color:black;
+    width: 90%;
+    height: 82%;
+    margin: auto ;
+    position: absolute;
+    z-index: 2;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    animation: trenxuong ease 1s ;
+    border-radius: 10px;
+}
+i.far.fa-window-close {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+}
+i.far.fa-window-close:hover{
+    background-color: red;
+    color: black;
+}
+.noidungnuoiga{
+    padding: 75px 50px;
+    padding: auto;
+    color: #fff;
+    height: auto;
+}
+
+.coll2.lon img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+.coll2.ga img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+.hiennoidungga{
+    display: block;
+}
+.dangxuat a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: block;
+}
+.dangxuat a:hover{
+    color: crimson;
+}
+.fa-sign-out-alt:before {
+    font-size: 40px;
+}
+
+.dangxuat i.fas.fa-sign-out-alt {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+.menu li i.fas.fa-sign-out-alt{
+    display: none;
+}
+.noidung-timhieu li{
+    display: none;
+    list-style: none;
+}
+.hienthemtext{
+    height:unset;
+}
+
+i.fas.fa-temperature-high{
+    font-size: 40px;
+}
+i.fas.fa-thermometer-half {
+    font-size: 40px;
+}
+table {  
+    margin: 25px auto;
+}
+table, th{
+    padding: 15px;
+}
+table, th, td {  
+    border: 1px solid white;
+    border-collapse: collapse;
+    text-align: center;
+}
+.batden{
+    color: chocolate;
+}
+.batquat{
+    color: rgb(25, 80, 197);
+}

@@ -1,0 +1,178 @@
+@media (max-width : 740px){
+    *{
+        box-sizing: border-box;
+    }
+    h1{
+        font-size: 1.5rem;
+       
+    }
+    .content-trangchu img{
+        width: 100%;
+    }
+    .menu{
+        margin-left: 0px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        /* background: linear-gradient(0,rgb(158, 186, 238),rgb(65, 134, 65)); */
+        background-color: rgb(44, 39, 39);
+        width: 100%;
+        display: none;
+        
+    }
+    .content-trangchu .nen{
+        width: 50%;
+    }
+
+    .menu li{
+        display: block;
+        padding: 22px;
+        
+    }
+    .menu a{
+        display: block;
+        text-decoration: none;
+    }
+    .logo{
+        position: relative;
+    }
+    .menu li:hover{
+        background-color: burlywood;
+        text-decoration: none;
+    }
+    .mobile-menu{
+        border-radius: 5px;
+        position: absolute;
+        right: 0px;
+        font-size: 50px;
+        display: block;
+    }
+    .mobile-menu:hover{
+        background-color: green;
+    }
+    .mobile-menu i{
+        padding: 10px 20px;
+    }
+    .hienmenu{
+        display: block;
+        animation: phaiqua ease 1s ;
+    }
+    .coll{
+        width: 100%;
+    }
+    .section-title h2 {
+        line-height: 1.5;
+    }
+    .detai{
+        width: 100%;
+    }
+    .hienthinhiet.coll2{
+        margin-top: 25px;
+    }
+    .hienthidoam.coll2{
+        margin-top: 25px;
+    }
+    
+    @keyframes todan{
+        from{
+            width:10%;
+    
+        }
+        to{
+            width:50%;
+        }
+    }
+
+
+
+    @keyframes phaiqua{
+        from{
+            transform: translateX(100px);
+    
+        }
+        to{
+            transform: translateX(0px);
+        }
+    }
+    .hienthi{
+        width: 100%;
+    }
+    .hienthi p{
+        font-size: 1rem;
+    }
+    label{
+        font-size: 40px;
+        font-weight: 700;
+    }
+    p.timhieu1{
+        padding-top: 0px;
+    }
+    .noidung-timhieu{
+        width: 100%;
+        background: linear-gradient( to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3) );
+        height: 100%;
+        margin: auto;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    .anh-link img{
+        width: 40%;
+    }
+    .menu li i.fas.fa-sign-out-alt{
+        display: block;
+    }
+    i.fas.fa-sign-out-alt{
+        display: none;
+    }
+    .noidung-timhieu p.timhieu1 {
+        margin-top: 20px;
+        text-indent: 40px;
+        overflow: hidden;
+        line-height: 20px;
+        height: 100px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+
+    }
+    .noidungnuoiga p.timhieu2 {
+        margin-top: 20px;
+        text-indent: 40px;
+        overflow: hidden;
+        line-height: 20px;
+        height: 100px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+    
+    
+    }
+    .coll2 img{
+        height: 150px;
+        width: 100px;
+    }
+    .table {
+        padding-top: 40px;
+    }
+    .noidungnuoi.hiennoidungga {
+        height: auto;
+    }
+    .noidungnuoiga{
+        padding: 10px;
+    }
+    .noidung-timhieu li{
+        display: block;
+        list-style: none;
+    }
+    .noidung-timhieu li:hover{
+        color: blue;
+        text-decoration:underline;
+    }
+    i.fas.fa-temperature-high{
+        font-size: 30px;
+    }
+    i.fas.fa-thermometer-half {
+        font-size: 30px;
+    }
+    i.fas.fa-bars{
+        color: white;
+    }
+}

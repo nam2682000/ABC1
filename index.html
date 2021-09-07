@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="dangnhap">
+        <h1>Admin Login </h1>
+            <form class="form" action="" method="POST" id="main-form">
+                <p><input type="text" id="username" value="" placeholder="Username" ></p>
+                <p><input type="password" id="password" value="" placeholder="Password" ></p>
+                <p><input onclick="ckeck()" class="submit" type="button" value="LOGIN" ></p>
+                <span id="thongbao"></span>
+            </form>
+    </div>
+</body>
+<script>
+    function ckeck()
+    {
+        var tk=document.getElementById('username');
+        var mk=document.getElementById('password');
+        if(tk.value=='admin'&&mk.value=='12345')
+        {
+            location.assign("http://127.0.0.1:5500/trangchu.html");
+        }
+        else{
+            document.getElementById('thongbao').innerHTML='Sai tên đăng nhập hoặc mật khẩu !';
+        }
+    }
+
+</script>
+</html>

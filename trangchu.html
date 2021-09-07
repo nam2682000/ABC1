@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đồ án quản lí chuồng nuôi</title>
+    <link rel="shortcut icon" href="./image/logoNTT.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="styletrangchu.css">
+    <link rel="stylesheet" href="res.css">
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="top">
+            <div class="logo">
+                <img src="image/logoNTT.png" alt="EROR">
+            </div>
+            <div class="menu">
+                <h2>
+                    <ul>
+                        <li class="active"><a href="#"><i class="fas fa-home"><strong
+                                        style="font-size: 16px; font-family: Arial, Helvetica, sans-serif;"> Trang
+                                        chủ</strong></i></a></li>
+                        <li><a class="mid" href="#Caidat"><i class="fas fa-cogs"></i> Cài đặt</a></li>
+                        <li><a class="mid" href="#Timhieu"><i class="fas fa-question-circle"></i> Tìm hiểu</a></li>
+                        <li><a class="mid" href="#Nhom"><i class="fas fa-users"></i> Nhóm</a></li>
+                        <li class="outt"><a href="http://127.0.0.1:5500/index.html"><i
+                                    class="fas fa-sign-out-alt"></i></a></li>
+                        <script>
+                            var a = document.querySelectorAll("a");
+                            for (var i = 0; i < a.length; i++) {
+                                a[i].onclick = function () {
+                                    var b = document.querySelector(".menu li.active");
+                                    if (b) b.classList.remove("active");
+                                    this.parentNode.classList.add('active');
+                                };
+                            }
+                        </script>
+                    </ul>
+                </h2>
+            </div>
+            <div class="dangxuat">
+                <a href="http://127.0.0.1:5500/index.html"><i class="fas fa-sign-out-alt"></i></a>
+            </div>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div id="Trangchu">
+            <div class="content-trangchu">
+                <h1>ĐỒ ÁN QUẢN LÍ CHUỒNG NUÔI</h1>
+                <div class="coll-1">
+                    <div><img class="nen" src="./image/nen.png" alt="" srcset=""></div>
+                </div>
+                <div class="trangchu-nen">
+                    <div class="detai coll-2">
+                        <h2 class="textt">Đề tài</h2>
+                        <div class="textt">Xây dựng website theo dõi điều khiển chuồng nuôi.</div>
+                        <img src="https://www.vietdvm.com/images/content/2017/12/cnty/tinh-trang-chat-don-chuong-trong-chan-nuoi-gia-cam-kiem-tra-thuong-xuyen.jpg"
+                            alt="">
+                        <div class="textt">Đề tài điều khiển kiểm sát chuồng gà dựa trên mô hình IOT được điểu khiển
+                            thông qua esp8266 giúp người dùng giám sát nhiệt độ, độ ẩm và điều khiển cái thiết bị trong
+                            chuồng gà...</div>
+                    </div>
+                    <div class="detai coll-2">
+                        <h2 class="textt">Công nghệ IOT</h2>
+                        <div class="textt">Aug 19, 2021</div>
+                        <img src="https://cdn.tgdd.vn/Files/2016/01/05/767301/internet-of-things-iot--xu-huong-cong-nghe-cua-tuong-lai-14.jpg"
+                            alt="">
+                        <div class="textt">IOT viết tắt của Internet of Things, nghĩa là Internet vạn vật, một hệ thống
+                            các thiết bị tính toán, máy móc cơ khí và kỹ thuật số hoặc con người có liên quan với nhau
+                            và khả năng truyền dữ liệu qua mạng mà không yêu cầu sự tương tác giữa con người với máy
+                            tính...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Caidat">
+            <div class="p1">
+                <h1>CÀI ĐẶT</h1>
+                <div class="noidung-caidat">
+                    <div class="coll2">
+                        <h2>THIẾT BỊ 1</h2>
+                        <i class="fas fa-lightbulb"></i>
+                        <div class="trangthai">
+                            Trạng thái :
+                            <select name="" id="">
+                                <option value="">OFF</option>
+                            </select>
+                        </div>
+                        <input type="button" value="ON/OFF" class="btnden" onclick="batden">
+                    </div>
+                    <div class="coll2">
+                        <h2>THIẾT BỊ 2</h2>
+                        <i class="fas fa-radiation"></i>
+                        <div class="trangthai">
+                            Trạng thái :
+                            <select name="" id="">
+                                <option value="">OFF</option>
+                            </select>
+                        </div>
+                        <input type="button" value="ON/OFF" class="btnquat" onclick="">
+                    </div>
+                </div>
+                <div class="hienthi">
+                    <div class="hienthinhiet coll2">
+                        <div class="thongso">
+                            <p><i class="fas fa-temperature-high"></i> NHIỆT ĐỘ</p>
+                            <label for="">0 </label>
+                            <label for="">°C</label>
+                        </div>
+                    </div>
+                    <div class="hienthidoam coll2">
+                        <div class="thongso">
+                            <p><i class="fas fa-thermometer-half"></i> ĐỘ ẨM</p>
+                            <label for="">0 </label>
+                            <label for="">%</label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="Timhieu">
+            <div class="p3">
+                <div class="noidung-timhieu">
+                    <h1>TÌM HIỂU</h1>
+                    <p class="timhieu1">Chăn nuôi gia súc gia cầm là một trong những công việc giúp kiếm thêm thu nhập
+                        cho nhiều nông dân ở các vùng quê. Đối với những trang trại chăn nuôi lớn thì người quản lý chắc
+                        chắn sẽ nắm được những kiến thức nhất định về loại gia súc gia cầm mà mình chăn nuôi.
+                        Còn đối với bà con nuôi với quy mô nhỏ lẻ hộ gia đình và những người mới bắt đầu muốn phát triển
+                        kinh tế nhờ chăn nuôi gia súc gia cầm thì những kiến thức về kỹ thuật chăn nuôi gia súc gia cầm
+                        chắc chắn sẽ còn rất hạn chế.
+                        <br> Vì vậy hôm nay bài viết này muốn chia sẻ đến bà con một số kiến thức cơ bản về kỹ thuật
+                        chăn nuôi gia súc, gia cầm để bà con có thể vận dụng tốt trong quá trình chăn nuôi của mình giúp
+                        đạt hiệu quả cao nhất. <br>
+                    </p>
+                    <li>Xem thêm...</li>
+                    <h2>Chọn loại vật nuôi :</h2>
+
+                    <div class="anh-link">
+                        <div class="coll2 ga">
+                            <img src="http://pngimg.com/uploads/chicken/small/chicken_PNG2144.png" alt="">
+                        </div>
+                        <div class="coll2 lon">
+                            <img src="http://pngimg.com/uploads/duck/small/duck_PNG5006.png" alt="">
+                        </div>
+                    </div>
+                    <div class="noidungnuoi">
+                        <div class="close">
+                            <i class="far fa-window-close"></i>
+                        </div>
+                        <div class="noidungnuoiga">
+                            <p class="timhieu2">Gà con dưới 4 tuần tuổi, nhất là gà dưới 3 tuần tuổi phải sưởi để duy
+                                trì nhiệt độ chuồng trên 30°C.
+                                Vào mùa hè thì sau 4 tuần ngày nóng không cần sưởi, những ngày mưa lạnh vẫn tiếp tục
+                                sưởi, nhưng công suất điện thấp hơn,
+                                để nhiệt độ trong chuồng luôn ở 28-30°C. Độ ẩm chuồng tốt nhất 65-70%, chất độn phải
+                                khô, bị ẩm ướt là thay ngay.</p>
+                            <li>Xem thêm...</li>
+                            <div class="table">
+                                <table>
+                                    <tr>
+                                        <th>Ngày tuổi</th>
+                                        <th>Quanh chụp sưởi °C</th>
+                                        <th>Trong chuồng °C</th>
+                                    </tr>
+                                    <tr>
+                                        <td>0-3</td>
+                                        <td>37-38</td>
+                                        <td>28-29</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4-7</td>
+                                        <td>34-35</td>
+                                        <td>27-28</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8-14</td>
+                                        <td>31-32</td>
+                                        <td>26-27</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15-21</td>
+                                        <td>28-29</td>
+                                        <td>26-27</td>
+                                    </tr>
+                                    <tr>
+                                        <td>22-28</td>
+                                        <td>24-20</td>
+                                        <td>20-18</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Nhom">
+            <div class="p4">
+                <div class="section-title">
+                    <h2>Thông tin các thành viên</h2>
+                    <p>Cảm ơn cô Tăng Cẩm Nhung đã hướng dẫn và chỉ bảo nhóm em!!!</p>
+                </div>
+                <div class="row">
+                    <div class="coll">
+                        <div class="member1">
+                            <a href="https://www.facebook.com/NamHamChoiii/"><img
+                                    src="https://scontent-hkt1-2.xx.fbcdn.net/v/t39.30808-6/240467146_2108163779347030_4288328665904125105_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=oEwNYWbaMTYAX-ncxJm&_nc_ht=scontent-hkt1-2.xx&oh=a06b3996affa5f6c99a7b9018dedb864&oe=61373530"
+                                    class="img-fluid" alt=""></a>
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>Dương Văn Nam</h4>
+                                    <span>MSSV: K185480106038</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="coll">
+                        <div class="member2">
+                            <a href="https://www.facebook.com/dotrongtan113"><img src="./image/team-2.jpg"
+                                    class="img-fluid" alt=""></a>
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>Đỗ Trọng Tấn</h4>
+                                    <span>MSSV: K185480106018</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="coll">
+                        <div class="member3">
+                            <a href="https://www.facebook.com/profile.php?id=100028586747164"><img
+                                    src="./image/team-3.jpg" class="img-fluid" alt=""></a>
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>Phạm Minh Thắng</h4>
+                                    <span>MSSV: K185480106019</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- hien va an menu -->
+    <script type="text/javascript">
+        var bar = document.querySelector("i.fas.fa-bars");
+        var menu = document.querySelector(".menu");
+        var menuhien = document.querySelector("ul");
+        function hienmenu() {
+            menu.classList.toggle('hienmenu')
+        }
+        bar.addEventListener('click', hienmenu)
+        menuhien.addEventListener('click', hienmenu)
+
+    </script>
+
+    <!--  -->
+
+    <script type="text/javascript">
+        var linkanhga = document.querySelector(".coll2.ga img");
+        var linkanhlon = document.querySelector(".coll2.lon img");
+        var ndnuoiga = document.querySelector(".noidungnuoi");
+        var dong = document.querySelector("i.far.fa-window-close")
+        function hiennoidungga() {
+            ndnuoiga.classList.toggle('hiennoidungga');
+        }
+        linkanhga.addEventListener('click', hiennoidungga);
+        linkanhlon.addEventListener('click', hiennoidungga);
+        dong.addEventListener('click', hiennoidungga);
+
+
+        // 
+        var xemthem = document.querySelector(".noidung-timhieu li");
+        var nd = document.querySelector('.noidung-timhieu p.timhieu1');
+        var xemthem1 = document.querySelector(".noidungnuoiga li");
+        var nd1 = document.querySelector('.noidungnuoiga p.timhieu2');
+        function hiennoidungxemthem() {
+            if (nd.clientHeight === 100) {
+                nd.style.height = 'auto';
+                xemthem.innerHTML = 'Thu gọn';
+            }
+            else {
+                nd.style.height = '100px';
+                xemthem.innerHTML = 'Xem thêm...';
+            }
+        }
+        function hiennoidungxemthem1() {
+            if (nd1.clientHeight === 100) {
+                nd1.style.height = 'auto';
+                xemthem1.innerHTML = 'Thu gọn';
+            }
+            else {
+                nd1.style.height = '100px';
+                xemthem1.innerHTML = 'Xem thêm...';
+            }
+        }
+        xemthem.addEventListener('click', hiennoidungxemthem);
+        xemthem1.addEventListener('click', hiennoidungxemthem1);
+
+        var den = document.querySelector('i.fas.fa-lightbulb');
+        var btden = document.querySelector('input.btnden');
+        var quat = document.querySelector('i.fas.fa-radiation');
+        var btnquat = document.querySelector('input.btnquat');
+        function batden(){
+            den.classList.toggle('batden')
+        }
+        btden.addEventListener('click',batden);
+        function batquat(){
+            quat.classList.toggle('batquat')
+        }
+        btnquat.addEventListener('click',batquat);
+        
+
+        
+        
+    </script>
+
+</body>
+
+</html>
